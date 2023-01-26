@@ -33,32 +33,18 @@ function isEven(input) {
 }
 
 function isVowel(input) {
-    if (input === 'A') {
-        return true;
-    } else {
-        if (input === 'a') {
-            return true;
+        if (typeof input !== 'string' || input.length > 1) {
+            return false;
         } else {
-            if (input === 'y') {
+            if (input.match(/[aeiou]/i)) {
+                return true;
+        } else {
                 return false;
-            } else {
-                if (input === 4) {
-                    return false;
-                } else {
-                    if (typeof input === 'boolean') {
-                        return false;
-                    } else {
-                        if (input === 'banana') {
-                            return false;
-                        } else {
-                            if (input === undefined) {
-                                return false;
-                            }
-                        }
-                    }
-
-                }
             }
-        }
     }
 }
+
+
+
+
+
