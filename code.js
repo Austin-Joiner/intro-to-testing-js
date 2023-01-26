@@ -43,22 +43,23 @@ function isVowel(input) {
 }
 
 function add(x, y) {
-    //return x + y;
-    if (x === 2 && y === 3) {
-        return 2 + 3;
-    } else if (x === -3 && y === -9) {
-        return -3 + -9;
-    } else if (x === '5' && y === 6) {
-        return 5 + 6;
-    } else if (x === '-4' && y === '10') {
-        return -4 + 10;
-    } else if (isNaN(x) || isNaN(y)) {
+    if (isNaN(x) || isNaN(y)) {
         return NaN;
+    } else {
+        return parseInt(x) + parseInt(y);
     }
 }
 
 
 
 
+/*if (x === 2 && y === 3) {
+    return 2 + 3;
+} else if (x === -3 && y === -9) {
+    return -3 + -9;
+} else if (x === '5' && y === 6) {
+    return 5 + 6;
+} else if (x === '-4' && y === '10') {
+    return -4 + 10;
 
-
+*/
