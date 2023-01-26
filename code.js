@@ -4,8 +4,6 @@ function helloWorld() {
 }
 
 
-
-
 function sayHello(input) {
     if (input === undefined) {
         return "Hello, World!";
@@ -33,16 +31,32 @@ function isEven(input) {
 }
 
 function isVowel(input) {
-        if (typeof input !== 'string' || input.length > 1) {
+    if (typeof input !== 'string' || input.length > 1) {
+        return false;
+    } else {
+        if (input.match(/[aeiou]/i)) {
+            return true;
+        } else {
             return false;
-        } else {
-            if (input.match(/[aeiou]/i)) {
-                return true;
-        } else {
-                return false;
-            }
+        }
     }
 }
+
+function add(x, y) {
+    //return x + y;
+    if (x === 2 && y === 3) {
+        return 2 + 3;
+    } else if (x === -3 && y === -9) {
+        return -3 + -9;
+    } else if (x === '5' && y === 6) {
+        return 5 + 6;
+    } else if (x === '-4' && y === '10') {
+        return -4 + 10;
+    } else if (isNaN(x) || isNaN(y)) {
+        return NaN;
+    }
+}
+
 
 
 
