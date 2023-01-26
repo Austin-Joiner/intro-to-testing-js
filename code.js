@@ -5,20 +5,13 @@ function helloWorld() {
 
 
 function sayHello(input) {
-    if (input === undefined) {
+    if (input === undefined || input === true || input === false) {
         return "Hello, World!";
     } else {
-        if (input === true) {
-            return "Hello, World!";
-        } else {
-            if (input === false) {
-                return "Hello, World!";
-            } else {
-                return "Hello, " + input + "!";
-            }
-        }
+        return "Hello, " + input + "!";
     }
 }
+
 
 
 function isFive(input) {
@@ -49,8 +42,6 @@ function add(x, y) {
         return parseInt(x) + parseInt(y);
     }
 }
-
-
 
 
 /*if (x === 2 && y === 3) {
